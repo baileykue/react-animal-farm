@@ -6,7 +6,8 @@ export default function Animal(props) {
     <>
       <div className="animal" style={{ left: props.left, top: props.top }}>
         <img src={`${process.env.PUBLIC_URL}/animals/${props.type}.svg`} />
-        <span>{props.name}</span>
+        <span className="name">{props.name}</span>
+        <p>{props.says}</p>
       </div>
     </>
   )
